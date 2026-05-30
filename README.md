@@ -75,17 +75,13 @@ Cleaned all column names by:
 - Removing extra spaces
 - Replacing spaces with underscores
 
-#### Step 7 — Fixed Date Column
-Converted invoice_date column from string format 
-to proper datetime format using pd.to_datetime()
-
-#### Step 8 — Created Total Amount Column
+#### Step 7 — Created Total Amount Column
 Created a new calculated column:
 total_amount = quantity × price
 Rounded to 2 decimal places using .round(2)
 for clean and professional numeric values.
 
-#### Step 9 — Created Age Group Column
+#### Step 8 — Created Age Group Column
 Categorized customers into 4 age groups:
 | Age Group | Age Range |
 |-----------|-----------|
@@ -94,7 +90,7 @@ Categorized customers into 4 age groups:
 | Middle Aged | 36 - 50 |
 | Senior | 51 - 70 |
 
-#### Step 10 — Exported Clean Data
+#### Step 9 — Exported Clean Data
 Exported the final cleaned dataset as a new CSV file 
 ready for PostgreSQL import.
 
